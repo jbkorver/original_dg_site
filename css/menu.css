@@ -1,0 +1,91 @@
+/* ================================================================ 
+This copyright notice must be untouched at all times.
+
+The original version of this stylesheet and the associated (x)html
+is available at http://www.cssplay.co.uk/menus/dd_valid.html
+Copyright (c) 2005-2007 Stu Nicholls. All rights reserved.
+This stylesheet and the assocaited (x)html may be modified in any 
+way to fit your requirements.
+=================================================================== */
+
+/* common styling */
+.nav {
+	font-family: helvetica, arial, sans-serif;
+	font-size:13px; 
+	z-index:10;
+	float:right;
+	margin:12px 0 0 0;
+	position:relative;
+}
+
+.nav ul li a, .nav ul li a:visited {
+	text-decoration: none; 
+	color:#fdfec8;
+	overflow:hidden;
+	padding:5px 1px 2px 1px;
+	height:15px;
+	display:block;
+	width:90px;
+	text-align:center;
+}
+
+.nav ul {
+	padding:0; 
+	margin:0; 
+	list-style: none;
+}
+
+.nav ul li {
+	float:right; 
+	position:relative;
+	text-decoration:none;
+}
+
+.nav ul li ul {display: none;}
+
+/* specific to non IE browsers */
+.nav ul li:hover a {
+	background-color:#a6b578;
+	text-decoration:underline;
+	color: #fdfec8;
+	display:block;
+}
+
+.nav ul li:hover ul {
+	position:absolute; 
+	top:20px; 
+	left:-20px; 
+	display:block;
+}
+
+.nav ul li:hover ul li a.hide {
+	color:#fdfec8;
+}
+
+.nav ul li:hover ul li:hover a.hide {
+	color:#fdfec8;
+}
+
+.nav ul li:hover ul li ul {display: none;}
+.nav ul li:hover ul li a {
+
+	color:#fdfec8;
+	text-decoration:none;
+}
+
+.nav ul li:hover ul li a:hover {
+	color:#fdfec8;
+	text-decoration:underline;
+	background-color:#a6b578;
+
+}
+
+.nav ul li:hover ul li:hover ul {
+	display:block; 
+	position:absolute; 
+	left:105px; 
+	top:0;
+}
+
+.nav ul li:hover ul li:hover ul.left {left:-105px;}
+
